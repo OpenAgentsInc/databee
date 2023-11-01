@@ -3,8 +3,8 @@
 from fastapi import FastAPI
 
 app = FastAPI(
-    title="Parserbee",
-    description="Parserbee data magic daemon",
+    title="Databee",
+    description="Databee data magic daemon",
     version="0.1.0"
 )
 

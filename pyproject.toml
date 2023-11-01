@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "parserbee"
+name = "databee"
 version = "0.1.0"
 description = "Data magic daemon"
 authors = ["Christopher David <chris@arcadelabs.co>"]
