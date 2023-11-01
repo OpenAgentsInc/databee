@@ -11,4 +11,4 @@ app = FastAPI(
 @app.get("/")
 async def root():
     """Say hello."""
-    return {"message": "Hello World"}
+    return {"message": "Hello from databee"}
