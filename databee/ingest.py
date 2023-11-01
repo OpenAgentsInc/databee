@@ -1,5 +1,13 @@
 """Utilities for ingesting PDFs"""
 
-def ingest_pdf():
-    """Let's try to ingest a pdf"""
-    print("lets ingest a pdf")
+from langchain.document_loaders import PyPDFLoader
+
+def ingest_pdf(path):
+    """
+    Ingest a PDF and return a list of pages
+    https://python.langchain.com/docs/modules/data_connection/document_loaders/pdf#using-pypdf
+    """
+
+    loader = PyPDFLoader(path)
+    pages = loader.load_and_split()
+    return pages
